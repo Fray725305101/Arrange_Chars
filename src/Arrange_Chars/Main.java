@@ -19,7 +19,6 @@ public class Main {
         //т.к. строки в Java неизменны:
         char[] inputSubstrChar = inputSubstr.toLowerCase().toCharArray();
         Arrays.sort(inputSubstrChar); //Сортируем массив символов
-        String sortedString = new String(inputSubstrChar); //Собираем отсортированные символы обратно в строку
-        return sortedString;
+        return new String(inputSubstrChar); //Собираем отсортированные символы обратно в строку и сразу возвращаем
     }
 }
